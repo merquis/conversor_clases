@@ -1,0 +1,55 @@
+div.background {
+   
+    border: 0px ;
+}
+
+div.transbox {
+    margin: 200px;
+    background-color: #FFFFFF;
+    border: 0px;
+    opacity: 0.6;
+	border-radius: 10px;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+	
+}
+
+
+th, td      {
+               vertical-align: top;
+               text-align: right;
+               font-size:large;
+               // border: 1px solid black;
+            }     /* Don't center table cells  */
+#converted  { color: red; font-weight: bold; font-size:large;          }     /* Calculated values in bold */
+input       {
+              text-align: right;       /* Align input to the right  */
+              border: none;
+              border-radius: 20px 20px 20px 20px;
+              padding: 5px  5px;
+              font-size:large;       }
+body
+{
+ /* Location of the image */
+   background-color: #58ACFA;
+
+
+ font-size:large;
+ font-family: "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
+
+h1 {
+    font-weight: normal;
+    font-family: "Verdana", cursive;
+    background: #3C5681;
+    padding: 5px 15px;
+    color: white;
+    display:inline-block;
+    border-radius: 10px 10px 10px 10px;
+}
