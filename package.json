@@ -4,18 +4,18 @@
   "devDependencies": {
     "chai": "*",
     "mocha": "latest"
-	"gulp": "~3.8.10"
+	"gulp": "~3.9.0"
   },
   
   "name": "temperature",
   "description": "ETSII ULL Grado de Informatica",
   "version": "1.0.0",
-  "main": "clases/medidas.js",
+  "main": "./clases/medidas.js",
   "directories": {
     "test": "tests"
   },
   "scripts": {
-    "test": "open tests/index.html # Ubuntu"
+    "test": "open ./tests/index.html # Ubuntu"
   },
   "repository": {
     "type": "git",
