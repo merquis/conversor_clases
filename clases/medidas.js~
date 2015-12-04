@@ -1,6 +1,6 @@
 a=0;b=0;
 function Calcular() {
-
+var temp = original.value;
          }
 Calcular.prototype.n1 = a; //propiedad numero 1
 Calcular.prototype.n2 = b; //propiedad numero 2

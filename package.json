@@ -10,7 +10,7 @@
   "name": "temperature",
   "description": "ETSII ULL Grado de Informatica",
   "version": "1.0.0",
-  "main": "medidas.js",
+  "main": "clases/medidas.js",
   "directories": {
     "test": "tests"
   },
