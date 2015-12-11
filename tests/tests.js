@@ -2,18 +2,18 @@ var assert = chai.assert;
 
 suite('Calcular', function() {
     test('32F = 0C', function() {
-        original.value = "32F";
+        medida_in.value = "32F";
         Calcular();
         assert.deepEqual(converted.innerHTML, "0.0 Celsius");
     });
     test('45C = 113.0 Farenheit', function() {
-        original.value = "45C";
+        medida_in.value = "45C";
         Calcular();
         assert.deepEqual(converted.innerHTML, "113.0 Farenheit");
     });
     test('5X = error', function() {
-        original.value = "5X";
-        //Calcular();
+        medida_in.value = "5X";
+        Calcular();
         assert.match(converted.innerHTML, /ERROR/);
     });
 });
