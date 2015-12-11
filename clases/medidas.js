@@ -1,6 +1,6 @@
 a=0;b=0;
 function Calcular() {
-
+ 
          }
 Calcular.prototype.n1 = a; //propiedad numero 1
 Calcular.prototype.n2 = b; //propiedad numero 2
@@ -75,14 +75,27 @@ function Kelvin() {
 
 
 function instanciar(){ //función que crea un objeto y asigna valores a las propiedades.
-         num1 = document.calcular.num1.value
-         num2 = document.calcular.num2.value
-         numeros = new Calcular()
-         numeros.n1 = num1
-         numeros.n2 = num2
+         var temp = medida_in.value;
+         var regexp = /([-+]?\d+(?:\.\d*)?)\s*([cCkKfF])/;
+         var m = temp.match(regexp);
+         if (m) {
+           var num = m[1];
+          num = parseFloat(num);
+           var tipo = m[2];
+
+           num1 = num;
+           num2 = tipo;
+
+           numeros = new Calcular();
+           numeros.n1 = num1;
+           numeros.n2 = num2;
+         }
+
          return numeros
+
 }
 function escribir() { //escribir resultados en el documento.
          texto = document.getElementById("respuesta")
          texto.innerHTML = operacion +  result
 }
+

@@ -16,7 +16,7 @@
        Introduzca una temperatura con su letra <br>
 
         <form action="#" name="calcular">
-        <p><input type="text" name="num1" size="4" placeholder="90" /><input type="text" name="num2" size="1" placeholder="C"/> Ejemplo temperatura a convertir</p>
+        <p><input id="medida_in" autofocus onchange="instanciar();" placeholder="Ej: 32F, 90C, 80K" size="20"></p>
         <p><input type="button" value="Celsius" onclick="Celsius()" />
 			<input type="button" value="Fahrenheit" onclick="Fahrenheit()" />
 			<input type="button" value="Kelvin" onclick="Kelvin()" /> </p>
@@ -28,3 +28,4 @@
     </div>
   </body>
 </html>
+
