@@ -9,8 +9,11 @@
   <body>
     <div id="mocha"></div>
     <input id="medida_in" placeholder="32F" size="10">
+    <input type="button" id="celsius" value="Celsius" onclick="Celsius(medida_in.value, respuesta)" />
+    <input type="button" id="fahrenheit" value="Fahrenheit" onclick="Fahrenheit(medida_in.value, respuesta)" />
+    <input type="button" id="kelvin" value="Kelvin" onclick="Kelvin(medida_in.value, respuesta)" />
     <!--<span class="output" id="respuesta"></span>-->
-    <input id="respuesta" size="10">
+  <h3 id="respuesta"></h3>
 
     <script src="chai.js"></script>
     <script src="mocha.js"></script>

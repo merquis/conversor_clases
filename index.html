@@ -1,31 +1,30 @@
 <html>
-  <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>Conversor de temperatura en JavaScript</title>
-     <link href="css/normalize.css" rel="stylesheet" type="text/css">
-     <link href="css/global.css" rel="stylesheet" type="text/css">
-     <script type="text/javascript" src="./clases/medidas.js"></script>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Conversor de temperatura en JavaScript</title>
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/global.css" rel="stylesheet" type="text/css">
+  <script type="text/javascript" src="./clases/medidas.js"></script>
 
-  </head>
- <body>
+</head>
+<body>
 
   <div  class="background" >
-  <div  class="transbox" align="center">
+    <div  class="transbox" align="center">
 
-    <h1>Conversor de Temperaturas</h1><br>
-       Introduzca una temperatura con su letra <br>
+      <h1>Conversor de Temperaturas</h1><br>
+      Introduzca una temperatura con su letra <br>
 
-        <form action="#" name="calcular">
-        <p><input id="medida_in" autofocus onchange="instanciar();" placeholder="Ej: 32F, 90C, 80K" size="20"></p>
-        <p><input type="button" value="Celsius" onclick="Celsius()" />
-			<input type="button" value="Fahrenheit" onclick="Fahrenheit()" />
-			<input type="button" value="Kelvin" onclick="Kelvin()" /> </p>
-        </form>
-        <h3 id="respuesta"></h3>
-
-
+      <form action="#" name="calcular">
+        <p><input id="medida_in"  placeholder="Ej: 32F, 90C, 80K" size="20"></p>
+        <p>
+          <input type="button" value="Celsius" onclick="Celsius(medida_in.value, respuesta)" />
+          <input type="button" value="Fahrenheit" onclick="Fahrenheit(medida_in.value, respuesta)" />
+          <input type="button" value="Kelvin" onclick="Kelvin(medida_in.value, respuesta)" />
+        </p>
+      </form>
+      <h3 id="respuesta"></h3>
     </div>
-    </div>
-  </body>
+  </div>
+</body>
 </html>
-
